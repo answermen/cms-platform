@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CMS Platform Views feature.
+ */
+
+include_once 'cms_platform_views.features.inc';

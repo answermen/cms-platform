@@ -1,0 +1,143 @@
+From 3b6c6d56027ec4f14918ac7ca597c3be67a8839c Mon Sep 17 00:00:00 2001
+From: Scott Robertson <srobertson@acromediainc.com>
+Date: Tue, 5 Aug 2014 09:14:35 -0700
+Subject: [PATCH] patched admin language to allow translation of tabs/local
+ tasks
+
+---
+ .../modules/admin_language/admin_language.module   | 105 +++++++++++++++++++++
+ 1 file changed, 105 insertions(+)
+
+diff --git a/wwwroot/sites/all/modules/admin_language/admin_language.module b/wwwroot/sites/all/modules/admin_language/admin_language.module
+index c6c10dd..a361a02 100644
+--- a/wwwroot/sites/all/modules/admin_language/admin_language.module
++++ b/wwwroot/sites/all/modules/admin_language/admin_language.module
+@@ -67,6 +67,53 @@ function admin_language_menu_link_alter(&$item) {
+ }
+ 
+ /**
++  * Implements hook_menu_local_tasks_alter().
++  */
++function admin_language_menu_local_tasks_alter(&$data, $router_item, $root_path) {
++  if (variable_get('admin_language_translate_local_tasks', 0)) {
++    global $language;
++    global $user;
++
++    $admin_language = admin_language_retrieve();
++
++    if ($admin_language->language != $language->language) {
++      // Switch the site's language to the admin language.
++      $site_language = $language;
++      $language = $admin_language;
++
++      // Retrieve the English versions of the local tasks so they can be re-translated
++      // into the admin language.
++      $result = db_select('menu_router', NULL, array('fetch' => PDO::FETCH_ASSOC))
++      ->fields('menu_router')
++      ->condition('tab_root', $router_item['tab_root'])
++      ->condition('context', MENU_CONTEXT_INLINE, '<>')
++      ->orderBy('weight')
++      ->orderBy('title')
++      ->execute();
++
++      $map = $router_item['original_map'];
++      $children = array();
++      $translated_tasks = array();
++      $root_path = $router_item['path'];
++
++      foreach ($result as $item) {
++        foreach ($data['tabs'] as &$tab_row) {
++          foreach ($tab_row['output'] as &$tab) {
++          if ($item['path'] == $tab['#link']['path']) {
++              _menu_translate($item, $map, TRUE);
++              $tab['#link'] = $item;
++            }
++          }
++        }
++      }
++
++      // Switch the language back.
++      $language = $site_language;
++    }
++  }
++}
++
++/**
+  * Implements hook_translated_menu_link_alter().
+  */
+ function admin_language_translated_menu_link_alter(&$item, $map) {
+@@ -441,6 +488,14 @@ function admin_language_settings() {
+     );
+   }
+ 
++  $form['admin_language_translate_local_tasks'] = array(
++    '#type' => 'radios',
++    '#title' => t('Translate local tasks'),
++    '#description' => t('Select this option if you would like to translate local task links, such as "View" and "Edit" tabs.'),
++    '#options' => array(t('Disabled'), t('Enabled')),
++    '#default_value' => variable_get('admin_language_translate_local_tasks', 0),
++  );
++
+   return system_settings_form($form);
+ }
+ 
+@@ -545,6 +600,56 @@ function admin_language_preferred($account) {
+ }
+ 
+ /**
++  * Retrieves the admin language object for the supplied or current user.
++  *
++  * @param object $account
++  *   A user account to look up the admin language for. If FALSE, the current
++  *   user will be used.
++  *
++  * @return object
++  *   A language object, which will be the account's admin language, the
++  *   default admin language, or the site's current language, if the user
++  *   does not have access to use the admin language.
++  */
++function admin_language_retrieve($account = FALSE) {
++  if (! $account) {
++    global $user;
++    $account = $user;
++  }
++
++  if (user_access('display admin pages in another language', $account)) {
++    global $_admin_language;
++
++    // If admin_language is not set on the user, the account may have not have
++    // been loaded with a user_load() call, so try to retrieve it manually
++    if (! isset($account->admin_language)) {
++      $result = db_query('SELECT language FROM {admin_language} WHERE uid = :uid', array(
++        ':uid' => $account->uid
++      ));
++
++      if ($user_admin_language = $result->fetchField()) {
++        $account->admin_language = $user_admin_language;
++      }
++    }
++
++    $language_list = language_list();
++
++    if (isset($account->admin_language) && isset($language_list[$account->admin_language])) {
++      return $language_list[$account->admin_language];
++    }
++    else {
++      return $_admin_language;
++    }
++  }
++  // Account does not have access to admin language, return default language
++  // object.
++  else {
++    global $language;
++    return $language;
++  }
++}
++
++/**
+  * Implements hook_language_init().
+  *
+  * The module doesn't provide its own language negotiation provider to ensure it
+-- 
+1.8.4.msysgit.0
+

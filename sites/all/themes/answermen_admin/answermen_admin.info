@@ -1,0 +1,14 @@
+base theme = shiny
+name = answermen_admin
+description = This is a sub-theme of Shiny
+stylesheets[all][] = css/answermen_admin.css
+core = 7.x
+
+
+scripts[] = admin.js
+
+
+regions[content] = Content
+regions[help] = Help
+regions[sidebar_first] = First sidebar
+regions[footer] = Footer

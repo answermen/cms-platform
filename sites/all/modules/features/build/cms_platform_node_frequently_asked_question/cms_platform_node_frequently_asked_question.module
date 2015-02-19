@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CMS Platform Frequently Asked Question feature.
+ */
+
+include_once 'cms_platform_node_frequently_asked_question.features.inc';

@@ -1,0 +1,114 @@
+.burr-flipped-sidebar-content {
+	.share {
+		margin-bottom: 30px;
+		border: solid 1px #e0495e;
+		height: 38px;
+		background: #b8b8b8;
+		overflow: hidden;
+		.fb-like {
+			float: left;
+			margin-top: 6px;
+			margin-left: 12px;
+		}
+		.twitter-share-button {
+			float: left;
+			margin-top: 7px;
+			margin-left: 12px;
+		}
+		.mail {
+			float: left;
+			margin-left: 12px;
+			background: url(../images/ico-email@2x.png) no-repeat;
+			width: 57px;
+			height: 20px;
+			background-size: 57px 20px;
+			margin-top: 7px;
+		}
+		.label {
+			float: left;
+			display: none;
+			padding: 0 16px;
+			color: #fff;
+			line-height: 38px;
+			background: #e0495e;
+			font-family: Open Sans Condensed, sans-serif;
+			font-size: 16px;
+			text-transform: uppercase;
+			//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+			border-radius: 0;
+		}
+	}
+	.pane-bean:not(.pane-bean-share-sidebar), .sideBar {
+	background: #f9f9f9; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5ZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMWUxZTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #f9f9f9 0%, #e1e1e1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e1e1e1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9f9f9 0%,#e1e1e1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9f9f9 0%,#e1e1e1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9f9f9 0%,#e1e1e1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9f9f9 0%,#e1e1e1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e1e1e1',GradientType=0 ); /* IE6-8 */
+	border: solid 1px #868686;
+	margin-bottom: 30px;
+	padding: 18px 15px;
+	.bean-row {padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #d8d8d8; &:last-child{border-bottom: none; margin-bottom: 0;}}
+		.btn-default {
+			background: #ababab;
+			color: #fff;
+			border-color: #9d9d9d;
+			//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: inset 0 0 3px #9d9d9d;
+			float: right;
+		}
+		h4 {
+			background: url(../images/dash@2x.png) repeat-x center bottom;
+			background-size: 6px 1px;
+			font-size: 24px;
+			font-family: Open Sans Condensed, sans-serif;
+			color: #c61b34;
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			position: relative;
+		}
+		
+		h3, h3 a {
+			color: #000;
+			font-size: 22px;
+			font-weight: 600;
+			line-height: 1.2em;
+			margin-bottom: 6px;
+			text-decoration: none;
+			position: relative;
+			z-index: 100;
+		}
+		h3 {float: left; a {padding-right: 60px; display: inline-block; margin-bottom: 0; &:hover {text-decoration: underline;}}}
+		.file-count {
+			&:before {
+			display: inline-block;
+			}
+			&:last-child {margin-left: -36px !important;}
+			&.fa-paperclip :before {@include transform(rotate(80deg));}
+			&.fa-video-camera {font-size: 16px; line-height: 35px; color: #bcbcbc; span {display: none;}}
+			padding-left: 7px;
+			font-family: 'fontawesome';
+			color: #888888;
+			font-size: 22px;
+			float: left;
+			margin-left: -60px;
+			z-index: 1;
+			position: relative;
+			span {
+			font-size: 15px;
+			color: #9e9e9e;
+			&:first-child {padding-left: 4px;}
+			}
+		}
+		p {
+			line-height: 1.4em;
+			margin-bottom: 8px;
+			font-size: 15px;
+			&.description {font-size: 12px; float: left;}
+		}
+		small {font-size: 12px; color: #717171; margin-bottom: 4px; margin-top: 6px; display: block;}
+	}
+}

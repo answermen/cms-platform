@@ -1,0 +1,35 @@
+/*! 
+ * Kalatheme (http://drupal.org/project/kalatheme) 
+ */
+ 
+ @import "bourbon";
+
+/* theme */
+@import "components/theme";
+
+/* XHTML MASTER CSS */
+@import "components/xhtmlmaster";
+
+/* NAV */
+@import "components/navigation";
+
+/* SLIDER */
+@import "components/slider";
+
+/* HERO */
+@import "components/hero";
+
+/* PAGE CSS */
+@import "components/page";
+
+/* BLOCKS CSS */
+@import "components/blocks";
+
+/* SIDEBAR CSS */
+@import "components/sidebar";
+
+/* VIEWS CSS */
+@import "components/views";
+
+/* RESPONSIVE CSS */
+@import "components/responsive";

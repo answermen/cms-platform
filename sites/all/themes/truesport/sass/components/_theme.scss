@@ -1,0 +1,124 @@
+//@extend-elements
+//original selectors
+//.language-switcher-locale-url, #secondary-menu-links
+%extend_1 {
+	float: right;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+//original selectors
+//.form-item-custom-search-blocks-form-1, #edit-actions
+%extend_2 {
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+////CONTEXTUAL TABS
+#contextual-tabs {
+	position: absolute;
+	top:-4px;
+	right: 35px;
+	ul {
+		list-style: none;
+		list-style-position: inside;
+		padding-left: 6px;
+		a {color: #333;}
+	}
+}
+
+#contextual-tabs .btn span.glyphicon {
+  float:none;
+  text-indent: 0px;
+  width: auto;
+}
+
+///////////////
+
+
+///// PANELIZER ///////
+
+.panels-add-content-modal {
+	.panels-categories-box {padding-top: 20px;}
+	h5 {display: none;}
+}
+
+/////////////
+
+#site-name-slogan {padding-left: 0; padding-top: 25px;}
+
+.logo-header {
+	height: 112px;
+	.container {background: url(../images/bg-header.jpg) no-repeat 0px -23px #141414; height: 112px;}	
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.menu-511 {
+	font-family: FontAwesome;
+	font-size: 20px;
+	color: #cfcfcf;
+	a {color: #cfcfcf !important; &:hover {color: white !important;}}
+	a.active {color: #cfcfcf !important; background-color: transparent !important; &:hover {color: white !important;}}
+}
+
+#secondary-menu-links {
+	@extend %extend_1;
+}
+
+.language-switcher-locale-url {
+	@extend %extend_1;
+	list-style: none;
+	li.active {
+		display: none;
+	}
+}
+.language-link {
+	padding: 15px;
+	display: block;
+	line-height: 20px;
+	font-size: 15px;
+	color: #9f9f9f;
+	font-size: 12px;
+	font-family: Open Sans Condensed, sans-serif;
+	text-decoration: none;
+	&:hover {
+		color: #fff;
+	}
+}
+#custom-search-blocks-form-1 {
+	float: right;
+	margin-bottom: 0;
+	margin-top: 4px;
+}
+.form-item-custom-search-blocks-form-1 {
+	@extend %extend_2;
+}
+#edit-actions, #edit-actions--2 {
+	@extend %extend_2;
+}
+#custom-search-blocks-form-1 #edit-submit, #custom-search-blocks-form-1 #edit-submit--2 {
+	font-family: 'FontAwesome' !important;
+	color: white !important;
+}
+.navbar-default nav {
+	width: 100%;
+}
+
+#main-wrapper {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.bean-beanslide ul li img {
+	max-width: 100%;
+	height: auto;
+}
+
+.burr-flipped-sidebar-content, .brenham-flipped-main-side {
+	.panel-pane {margin-bottom: 10px;}
+}
+
+.extension {text-transform: uppercase;}

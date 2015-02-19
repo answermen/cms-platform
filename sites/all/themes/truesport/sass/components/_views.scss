@@ -1,0 +1,26 @@
+.view-content.row {
+	margin: 0;
+}
+	h4.pane-title {
+		background: url(../images/dash@2x.png) repeat-x center bottom;
+		background-size: 6px 1px;
+		font-size: 24px;
+		font-family: Open Sans Condensed, sans-serif;
+		color: #c61b34;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		position: relative; 
+	}
+	
+.view-news {
+	.views-row {min-height: 145px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px dotted #ccc; &:last-child {border-bottom: none;}}
+	img {float: left; margin: 5px 20px 0 0; @include transition(all .2s ease-in-out); &:hover { opacity: .7; background-color: black;} }
+	h3 {
+		font-size: 19px;
+		font-weight: 600;
+		color: #333;
+		margin-bottom: 8px;
+		a {text-decoration: none; color: #333; &:hover {color: #c61b34;}}
+	}
+	p {font-size: 14px !important; color: #333333}
+}

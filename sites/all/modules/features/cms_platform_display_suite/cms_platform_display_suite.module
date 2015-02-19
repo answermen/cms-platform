@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CMS Platform Display Suite feature.
+ */
+
+include_once 'cms_platform_display_suite.features.inc';

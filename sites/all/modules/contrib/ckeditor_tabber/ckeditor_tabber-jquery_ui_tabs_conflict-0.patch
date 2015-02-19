@@ -1,0 +1,22 @@
+diff --git a/semantic-tabs.js b/semantic-tabs.js
+index c6b56fa..7e9d339 100644
+--- a/semantic-tabs.js
++++ b/semantic-tabs.js
+@@ -3,7 +3,7 @@
+   var tabIndex = 0;
+   var instanceId = 0;
+ 
+-  $.fn.tabs = function () {
++  $.fn.ckeditortabs = function () {
+     this.each(function () {
+       var el = $(this);
+       var current;
+@@ -89,7 +89,7 @@
+ (function ($) {
+   Drupal.behaviors.ckeditorTabs = {
+     attach: function (context) {
+-      $(Drupal.settings.ckeditor_tabber.elements, context).tabs();
++      $(Drupal.settings.ckeditor_tabber.elements, context).ckeditortabs();
+     }
+   };
+ }(jQuery));

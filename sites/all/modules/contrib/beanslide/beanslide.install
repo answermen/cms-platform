@@ -1,0 +1,24 @@
+<?php
+/**
+ * @file
+ * Update hooks for the beanslide module.
+ */
+
+/**
+ * Set the auto-rotate option.
+ */
+function beanslide_update_7101() {
+  // Loop through all slideshow beans and set `auto_rotate`.
+  $beans = bean_get_all_beans();
+  foreach ($beans as $bean) {
+    if ($bean->type !== 'beanslide') {
+      continue;
+    }
+    $config = $bean->data;
+    if (!isset($config['auto_rotate'])) {
+      $config['auto_rotate'] = TRUE;
+      $bean->setValues($config);
+      $bean->save();
+    }
+  }
+}

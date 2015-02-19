@@ -1,0 +1,85 @@
+#beanslide {
+	margin-bottom: 30px;
+	position: relative;
+	height: 414px;
+	.slides {
+		height: 414px;
+		li {
+			position: relative;
+			.caption {
+				position: absolute;
+				bottom: 0;
+				top: auto;
+				left: 0;
+				width: 100%;
+				color: #fff;
+				background: #d81b36;
+				background: rgba(216,27,54,0.7);
+				aside {
+					padding: 15px;
+				}
+				h1 {
+					font-size: 12px;
+					line-height: 1em;
+					font-family: Open Sans Condensed, sans-serif;
+					margin-bottom: 0.5em;
+				}
+				p {
+					font-size: 9px;
+					margin-bottom: 1em;
+				}
+				a.more {
+					float: right;
+					background: #ad162b;
+					text-decoration: none;
+					color: #fff !important;
+					font-size: 14px;
+					text-transform: uppercase;
+					height: 30px;
+					line-height: 30px;
+					padding: 0 18px;
+					-webkit-border-radius: 30px;
+					-moz-border-radius: 30px;
+					margin-bottom: -20px;
+					margin-right: -10px;
+					//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+					border-radius: 30px;
+					&:hover {background: #941325; }
+				}
+			}
+		}
+	}
+	.flex-control-nav {
+		font-size: 0;
+		position: absolute;
+		left: 15px;
+		bottom: 15px;
+		z-index: 200;
+		li {
+			margin: 0;
+		}
+		a {
+			width: 8px;
+			height: 8px;
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+			text-indent: -999999px;
+			background: #ec8d9b;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+			border-radius: 6px;
+			margin-right: 6px;
+			cursor: pointer;
+			//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+			&.flex-active {
+				background: #f7d1d7;
+			}
+		}
+	}
+	nav a:hover {
+		background: #f7d1d7;
+	}
+}

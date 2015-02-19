@@ -1,0 +1,132 @@
+<?php
+  !function_exists('profiler_v2') ? require_once('libraries/profiler/profiler.inc') : FALSE;
+  profiler_v2('cms_platform');
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ */
+function cms_platform_install() {
+  // Enable some cms_platform blocks.
+  $default_theme = 'truesport';
+  $admin_theme = 'answermen_admin';
+  // disable all themes
+  db_update('system')
+    ->fields(array('status' => 0))
+    ->condition('type', 'theme')
+    ->execute();
+  // enable $default_theme
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', $default_theme)
+    ->execute();
+  // enable $admin_theme
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', $admin_theme)
+    ->execute();
+  variable_set('theme_default', $default_theme);
+  variable_set('admin_theme', $admin_theme);
+  // activate admin theme when editing a node
+  variable_set('node_admin_theme', '1');
+  $blocks = array(
+    array(
+      'module' => 'system',
+      'delta' => 'main',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'user',
+      'delta' => 'login',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'sidebar_first',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'system',
+      'delta' => 'help',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -10,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+  );
+  if ($default_theme !== $admin_theme) {
+    $admin_blocks = array(
+      array(
+        'module' => 'system',
+        'delta' => 'main',
+        'theme' => $admin_theme,
+        'status' => 1,
+        'weight' => 0,
+        'region' => 'content',
+        'pages' => '',
+        'cache' => -1,
+      ),
+      array(
+        'module' => 'system',
+        'delta' => 'help',
+        'theme' => $admin_theme,
+        'status' => 1,
+        'weight' => 0,
+        'region' => 'help',
+        'pages' => '',
+        'cache' => -1,
+      ),
+    );
+    $blocks = array_merge($blocks, $admin_blocks);
+  }
+  // drop system / user blocks to ensure correct building
+  db_delete('block')->condition('module', 'system')->execute();
+  db_delete('block')->condition('module', 'user')->execute();
+  // add in our blocks defined above
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  foreach ($blocks as $block) {
+    $query->values($block);
+  }
+  $query->execute();
+  
+  // Update the menu router information.
+  menu_rebuild();
+  // revert features to ensure they are all installed
+  $features = array(
+    'panopoly_magic',
+    'panopoly_theme',
+    'cms_platform_context',
+	'cms_platform_fields',
+	'cms_platform_media',
+	'cms_platform_menu',
+	'cms_platform_node_article',
+	'cms_platform_node_frequently_asked_question',
+	'cms_platform_node_page',
+	'cms_platform_node_panel',
+	'cms_platform_node_voices_of_true_sport',
+	'cms_platform_panels',
+	'cms_platform_seo',
+	'cms_platform_site',
+	'cms_platform_taxonomy',
+	'cms_platform_users',
+	'cms_platform_views',
+	'cms_platform_beans',
+	'cms_platform_default_blocks',
+	'cms_platform_default_content',
+	'cms_platform_language'
+  );
+  features_revert($features);
+  // ignore any rebuild messages
+  node_access_needs_rebuild(FALSE);
+  // ignore any other install messages
+  drupal_get_messages();
+}

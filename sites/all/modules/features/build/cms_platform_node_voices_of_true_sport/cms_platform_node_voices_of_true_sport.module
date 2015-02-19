@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CMS Platform Voices of True Sport feature.
+ */
+
+include_once 'cms_platform_node_voices_of_true_sport.features.inc';

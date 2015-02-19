@@ -1,0 +1,170 @@
+nav.navbar-collapse {
+	display: none;
+	background: #616161; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYxNjE2MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1NjU2NTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #616161 0%, #565656 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#616161), color-stop(100%,#565656)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #616161 0%,#565656 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #616161 0%,#565656 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #616161 0%,#565656 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #616161 0%,#565656 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#616161', endColorstr='#565656',GradientType=0 ); /* IE6-8 */
+	border-bottom: solid 5px #bdbdbd !important;
+	position: relative;
+	z-index: 999;
+	#custom-search-blocks-form-1 {
+		border-left: solid 1px #414141;
+		margin-left: 10px;
+		padding-left: 24px;
+		height: 42px;
+		position: relative;
+		float: right;
+		padding-top: 4px;
+		&:before {
+			border-left: solid 1px #757575;
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 1px;
+			height: 100%;
+		}
+		&:hover {
+			input#edit-custom-search-blocks-form-1--2 {width: 130px; background-color: #424242; margin-right: 10px; padding-left: 10px;}
+		}
+		input#edit-custom-search-blocks-form-1--2 {
+			background: none;
+			margin: 0;
+			padding: 3px 0;
+			border: 0;
+			outline: 0 none;
+			width: 60px;
+			color: #9f9f9f !important;
+			font-size: 12px;
+			font-family: Open Sans Condensed, sans-serif;
+			float: left;
+			box-shadow: none;
+			@include transition(all .4s ease-in-out);
+		}
+		#edit-submit, #edit-submit--2 {
+			background: none;
+			border: 0;
+			outline: 0 none;
+			float: right;
+			border: none !important;
+			border-radius: 0 !important;
+			box-shadow: none;
+			width: 20px;
+			&:hover {color: #333 !important;}
+		}
+	}
+	ul#superfish-1 {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		float: left;
+		height: 52px;
+		line-height: 52px;
+		border: none !important;
+		z-index: 1000;
+		li.sfHover {
+			a {
+				background: #f3f3f3;
+				color: #3e3e3e;
+			}
+			ul {
+				li.sfHover {
+					a {
+						background: #e8e8e8 !important;
+						color: #c61b34 !important;
+						position: relative;
+						z-index: 1000;
+					}
+				}
+			}
+		}
+		li {
+			background: url(../images/nav-s.png) no-repeat left 21px;
+			display: block;
+			float: left;
+			background-size: 2px 11px;
+			border: none !important;
+			&.active-trail {background: none; &+ li {background: none;}; a {background: #e5e5e5;	color: #666;}}
+			a {
+				display: block;
+				float: left;
+				color: #e8e8e8;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 12px;
+				font-family: Open Sans Condensed, sans-serif;
+				height: 56px;
+				padding: 0 14px;
+				border: none !important;
+				&:hover {
+					background: #f3f3f3;
+					color: #3e3e3e;
+				}
+				&.active {
+					background: #e5e5e5;
+					color: #666;
+				}
+			}
+		}
+			ul {
+				width: 230px;
+				background: #f3f3f3;
+				height: auto;
+				top:52px;
+				line-height: normal;
+				-webkit-box-shadow: 2px 3px 7px rgba(0,0,0,0.27);
+				-moz-box-shadow: 2px 3px 7px rgba(0,0,0,0.27);
+				box-shadow: 2px 3px 7px rgba(0,0,0,0.27);
+				padding: 10px 0;
+				border: none !important;
+			li {
+				background: none;
+				border: none !important;
+				position: static;
+				a {
+					float: none;
+					border: none !important;
+					display: block;
+					line-height: normal;
+					height: auto;
+					font-size: 15px;
+					font-weight: 600;
+					font-family: Open Sans, sans-serif;
+					color: #2a2a2a !important;
+					background: none !important;
+					text-transform: none;
+					-webkit-box-shadow: 0 0 0 !important;
+					-moz-box-shadow: 0 0 0 !important;
+					//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+					box-shadow: 0 0 0 !important;
+					padding: 10px 15px;
+					&:hover {
+						background: #e8e8e8 !important;
+						color: #c61b34 !important;
+						position: relative;
+						z-index: 1000;
+					}
+					&.hover {
+						background: #e8e8e8 !important;
+						color: #c61b34 !important;
+						position: relative;
+						z-index: 1000;
+					}
+				}
+			}
+			ul {
+				background: #e8e8e8;
+				position: absolute;
+				top: 0;
+				left: 230px;
+				height: 100%;
+				width: 200px;
+			}
+		}
+	}
+}
