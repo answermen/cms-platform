@@ -1,0 +1,180 @@
+.page-admin-content .action-links, .tips, #block-system-help, .page-node-add-simplenews #edit-body-und-0-format {
+	display: none;
+}
+
+.form-actions:first-child {
+	float: right !important;
+	width: 20%;
+	margin-left: 30px;
+}
+
+
+.views-table .button {
+	font-size: 12px;
+	padding: 5px 13px;	
+}
+
+.form-actions:first-child input.form-submit {font-size: 12px !important; margin-bottom: 10px !important;}
+
+.form-actions:first-child  #edit-delete {display: none;}
+
+.ctools-modal-content {
+
+}
+
+.group-left {
+	float: left !important;
+}
+
+th.views-field.views-field-entityreference-view-widget {
+	width: 10px;
+}
+	
+	
+#modalBackdrop {
+background: black !important;
+opacity: .75 !important;	
+}
+
+.menu-operations {
+	width: 170px;
+}
+#edit-body {
+	margin-bottom: 20px;
+}
+
+.region-sidebar-first {
+	float: right;
+	width: 21%;
+	margin-top: 80px;
+	background-color: #fffce6;
+	padding: 10px;
+	padding-top: 0;
+}
+
+.sidebar-first .region-content {
+	float: left;
+	width: 78%;
+}
+.sidebar-first .tabledrag-changed-warning {
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.sidebar-first .view-filters {
+    width: 120%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.sidebar-first h2 {
+    font-size: 1.1em;
+    margin-bottom: 43px;
+}
+
+.sidebar-first #block-views-employee-news-list-block-1 td a, .sidebar-first #block-views-employee-news-list-block-2 td a {
+	font-size: 12px;
+}
+
+.sidebar-first #block-views-employee-news-list-block-1 td, .sidebar-first #block-views-employee-news-list-block-2 td {
+	padding: 10px;
+}
+
+.sidebar-first #block-views-employee-news-list-block-1, .sidebar-first #block-views-employee-news-list-block-2 {
+	position: relative;
+}
+
+.sidebar-first #block-views-employee-news-list-block-1 .tabledrag-toggle-weight-wrapper, .sidebar-first #block-views-employee-news-list-block-2 .tabledrag-toggle-weight-wrapper {
+	display: none;
+}
+
+.sidebar-first #block-views-employee-news-list-block-1 #edit-actions--2, .sidebar-first #block-views-employee-news-list-block-2 #edit-actions--3 {
+	position: absolute;
+	top:25px;
+	left: 0;
+}
+
+.sidebar-first #block-views-employee-news-list-block-1 #edit-actions--2 input,  #block-views-employee-news-list-block-2 #edit-actions--3 input {
+	font-size: 11px;
+	padding: 4px 13px;
+}
+
+.ds-2col-stacked-fluid > .group-right {
+    float: right;
+    width: 48%;
+}
+
+.group-right {
+	margin-left: 2%;
+}
+
+
+.filter-wrapper {
+	min-height: 60px;
+	border-bottom: 1px dotted #CCC !important;
+	margin-bottom: 20px !important;
+	padding-bottom: 20px;
+}
+
+.filter-wrapper .tips, .filter-wrapper p {
+	display: none;
+}
+
+xxxx.field-widget-image-image {
+	background: #f7f7f7;
+	padding: 10px;
+	border: 1px dotted #CCC;
+	margin-top: 10px;
+}
+
+.group-header .form-item, .group-header .form-wrapper {
+	float: left;
+	margin-right: 20px;
+}
+
+.group-header {
+	min-height: 60px;
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	float: left;
+	width: 100%;
+	min-width: 900px;
+}
+
+.insert {
+
+}
+
+xxx.file, xxxx.file-size {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+
+html.js #features-export-form fieldset.collapsed {
+    margin-bottom: 0;
+    min-height: 3em;
+    padding: 0;
+    top: 0;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+
+}
+
+.view-filters {
+	margin-bottom: 30px;
+}
+
+#edit-field-tags .form-item {
+	width: 261px;
+}
+
+.page-admin-newsletter-sort #edit-actions {
+	position: absolute;
+	top:-16px;
+	left: 0px;
+}
+

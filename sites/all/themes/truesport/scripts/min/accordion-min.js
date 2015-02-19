@@ -1,0 +1,1 @@
+jQuery(function(){jQuery("#accordion").accordion({header:"h3",collapsible:!0,active:!0})}),jQuery(document).ready(function(){jQuery(".breadcrumb").insertAfter(jQuery(".page-content h2:first-child")),jQuery("#contextual-tabs").insertAfter(jQuery(".page-content h2:first-child"))});

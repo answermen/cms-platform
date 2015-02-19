@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CMS Platform Default Content feature.
+ */
+
+include_once 'cms_platform_default_content.features.inc';

@@ -1,0 +1,247 @@
+; Packaging information for cms_platform
+name = "CMS Platform"
+description = ""
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; @font-your-face
+dependencies[] = fontyourface
+dependencies[] = fontyourface_ui
+dependencies[] = typekit_api
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_menu_source
+dependencies[] = admin_menu_toolbar
+dependencies[] = admin_views
+dependencies[] = coffee
+dependencies[] = contextual_tabs
+dependencies[] = filter_perms
+dependencies[] = module_filter
+; Bean
+dependencies[] = bean
+dependencies[] = bean_admin_ui
+dependencies[] = bean_pane
+dependencies[] = bean_uuid
+dependencies[] = beanslide
+dependencies[] = beanslide_starterkit
+; Chaos tool suite
+dependencies[] = ctools
+dependencies[] = ctools_access_ruleset
+dependencies[] = fape
+dependencies[] = page_manager
+dependencies[] = views_content
+; Clean markup
+dependencies[] = clean_markup
+dependencies[] = clean_markup_blocks
+dependencies[] = clean_markup_panels
+; Context
+dependencies[] = context
+dependencies[] = context_addassets
+dependencies[] = context_docket
+dependencies[] = context_layouts
+dependencies[] = context_ui
+; Core
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = php
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = translation
+dependencies[] = update
+dependencies[] = user
+; Display Suite
+dependencies[] = ds
+dependencies[] = ds_extras
+dependencies[] = ds_format
+dependencies[] = ds_forms
+dependencies[] = ds_search
+dependencies[] = ds_ui
+; Entityforms
+dependencies[] = entityform
+dependencies[] = entityform_block
+dependencies[] = entityform_notifications
+; Features extra
+dependencies[] = fe_block
+; Feeds
+dependencies[] = feeds
+dependencies[] = feeds_ui
+; Fields
+dependencies[] = addressfield
+dependencies[] = addressfield_phone
+dependencies[] = conditional_fields
+dependencies[] = email
+dependencies[] = entityreference
+dependencies[] = entityreference_view_widget
+dependencies[] = field_collection
+dependencies[] = field_group
+dependencies[] = field_permissions
+dependencies[] = filefield_paths
+dependencies[] = filefield_sources
+dependencies[] = link
+dependencies[] = name
+dependencies[] = references_dialog
+dependencies[] = smart_trim
+dependencies[] = title
+; FlexSlider
+dependencies[] = flexslider
+; Input filters
+dependencies[] = pathologic
+; Media
+dependencies[] = file_entity
+dependencies[] = imce
+dependencies[] = imce_filefield
+dependencies[] = imce_uploader
+dependencies[] = imce_uploader_plupload
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = media_wysiwyg
+dependencies[] = media_wysiwyg_view_mode
+dependencies[] = plupload
+dependencies[] = video_embed_brightcove
+dependencies[] = video_embed_facebook
+dependencies[] = video_embed_field
+; More Buttons
+dependencies[] = mb
+dependencies[] = mb_content
+dependencies[] = mb_extra
+; Multilanguage
+dependencies[] = admin_language
+; Multilingual
+dependencies[] = l10n_client
+dependencies[] = l10n_update
+; Multilingual - Entity Translation
+dependencies[] = entity_translation
+; Multilingual - Internationalization
+dependencies[] = entityform_i18n
+dependencies[] = i18n
+dependencies[] = i18n_block
+dependencies[] = i18n_field
+dependencies[] = i18n_menu
+dependencies[] = i18n_node
+dependencies[] = i18n_panels
+dependencies[] = i18n_path
+dependencies[] = i18n_redirect
+dependencies[] = i18n_select
+dependencies[] = i18n_string
+dependencies[] = i18n_sync
+dependencies[] = i18n_taxonomy
+dependencies[] = i18n_translation
+dependencies[] = i18n_variable
+dependencies[] = i18nviews
+dependencies[] = rules_i18n
+dependencies[] = translation_table
+; Other
+dependencies[] = absolute_messages
+dependencies[] = auto_entitylabel
+dependencies[] = backup_migrate
+dependencies[] = block_class
+dependencies[] = crumbs
+dependencies[] = crumbs_labs
+dependencies[] = empty_page
+dependencies[] = entity
+dependencies[] = entity2text
+dependencies[] = entity_rules
+dependencies[] = entity_token
+dependencies[] = environment_indicator
+dependencies[] = environment_modules
+dependencies[] = ffc
+dependencies[] = field_count_formatter
+dependencies[] = field_formatter_settings
+dependencies[] = insert
+dependencies[] = job_scheduler
+dependencies[] = libraries
+dependencies[] = linkit
+dependencies[] = login_destination
+dependencies[] = logintoboggan
+dependencies[] = logintoboggan_rules
+dependencies[] = masquerade
+dependencies[] = menu_attributes
+dependencies[] = menu_block
+dependencies[] = menu_item_visibility
+dependencies[] = menu_token
+dependencies[] = panels_php
+dependencies[] = pathauto
+dependencies[] = rabbit_hole
+dependencies[] = realname
+dependencies[] = rh_node
+dependencies[] = save_draft
+dependencies[] = shield
+dependencies[] = stringoverrides
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = twitter_block
+dependencies[] = twitterfield
+; Panels
+dependencies[] = panelizer
+dependencies[] = panels
+dependencies[] = panels_bootstrap_layouts
+dependencies[] = panels_ipe
+dependencies[] = panels_mini
+dependencies[] = panels_node
+dependencies[] = panels_tabs
+; Permissions
+dependencies[] = view_unpublished
+; Rules
+dependencies[] = rules
+dependencies[] = rules_admin
+dependencies[] = rules_scheduler
+; Search
+dependencies[] = custom_search
+dependencies[] = custom_search_blocks
+dependencies[] = custom_search_i18n
+dependencies[] = custom_search_taxonomy
+; UUID
+dependencies[] = uuid
+; User interface
+dependencies[] = chosen
+dependencies[] = ckeditor
+dependencies[] = ckeditor_link
+dependencies[] = content_menu
+dependencies[] = jquery_update
+dependencies[] = superfish
+; Variable
+dependencies[] = variable
+dependencies[] = variable_admin
+dependencies[] = variable_realm
+dependencies[] = variable_store
+; Views
+dependencies[] = better_exposed_filters
+dependencies[] = insert_view
+dependencies[] = semanticviews
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_conditional
+dependencies[] = views_data_export
+dependencies[] = views_docket
+dependencies[] = views_ui
+; Features
+dependencies[] = features
+dependencies[] = features_builder
+dependencies[] = features_builder_default
+dependencies[] = features_roles_permissions
+dependencies[] = features_translations
+dependencies[] = field_collection_deploy
+dependencies[] = panopoly_magic
+dependencies[] = panopoly_theme
+dependencies[] = uuid_features

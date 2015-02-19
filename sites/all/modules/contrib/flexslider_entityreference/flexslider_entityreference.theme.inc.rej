@@ -1,0 +1,48 @@
+***************
+*** 39,49 ****
+  }
+  
+  /**
+-  * Default theme implementation for 'flexslider_entitylist'.
+   *
+   * @see theme_flexslider_list().
+   */
+- function theme_flexslider_entitylist($vars) {
+    // Reference configuration variables
+    $optionset = &$vars['settings']['optionset'];
+    $items = &$vars['items'];
+--- 39,49 ----
+  }
+  
+  /**
++  * Default theme implementation for 'flexslider_entityreference_list'.
+   *
+   * @see theme_flexslider_list().
+   */
++ function theme_flexslider_entityreference_list($vars) {
+    // Reference configuration variables
+    $optionset = &$vars['settings']['optionset'];
+    $items = &$vars['items'];
+***************
+*** 84,93 ****
+  }
+  
+  /**
+-  * Default theme implementation for 'flexslider_list_entity'.
+   *
+   * @see theme_flexslider_list_item().
+   */
+- function theme_flexslider_list_entity($vars) {
+    return '<li' . drupal_attributes($vars['settings']['attributes']) . '>' . $vars['item']['entity'] . $vars['caption'] . "</li>\n";
+  }
+--- 84,93 ----
+  }
+  
+  /**
++  * Default theme implementation for 'flexslider_entityreference_list_item'.
+   *
+   * @see theme_flexslider_list_item().
+   */
++ function theme_flexslider_entityreference_list_item($vars) {
+    return '<li' . drupal_attributes($vars['settings']['attributes']) . '>' . $vars['item']['entity'] . $vars['caption'] . "</li>\n";
+  }

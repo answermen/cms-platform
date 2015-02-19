@@ -1,0 +1,8 @@
+name = CMS Platform Context
+core = 7.x
+package = CTools
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = features
+features[context][] = add_accordion
+features[features_api][] = api:2

@@ -1,0 +1,14 @@
+name = CMS Platform Panel
+core = 7.x
+package = Content
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+features[node][] = panel
+features[variable][] = menu_options_panel
+features[variable][] = menu_parent_panel
+features[variable][] = node_options_panel
+features[variable][] = node_preview_panel
+features[variable][] = node_submitted_panel
+features[variable][] = field_bundle_settings_node__panel
+features[features_api][] = api:2
