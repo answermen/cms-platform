@@ -179,6 +179,7 @@ dependencies[] = menu_attributes
 dependencies[] = menu_block
 dependencies[] = menu_item_visibility
 dependencies[] = menu_token
+dependencies[] = menu_import
 dependencies[] = panels_php
 dependencies[] = pathauto
 dependencies[] = rabbit_hole
