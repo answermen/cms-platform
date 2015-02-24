@@ -164,6 +164,7 @@ dependencies[] = entity_rules
 dependencies[] = entity_token
 dependencies[] = environment_indicator
 dependencies[] = environment_modules
+dependencies[] = fast_dblog
 dependencies[] = ffc
 dependencies[] = field_count_formatter
 dependencies[] = field_formatter_settings
