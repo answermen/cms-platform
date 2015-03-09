@@ -10,6 +10,92 @@
 function cms_platform_node_page_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'field_collection_item-field_content_tabs-field_tab_body'
+  $field_instances['field_collection_item-field_content_tabs-field_tab_body'] = array(
+    'bundle' => 'field_content_tabs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_tab_body',
+    'label' => 'Tab Body',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_content_tabs-field_tab_title'
+  $field_instances['field_collection_item-field_content_tabs-field_tab_title'] = array(
+    'bundle' => 'field_content_tabs',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_tab_title',
+    'label' => 'Tab Title',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-page-body'
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
@@ -91,6 +177,88 @@ function cms_platform_node_page_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-field_content_tabs'
+  $field_instances['node-page-field_content_tabs'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'content_reference' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'quicktabs_field_collection',
+        'settings' => array(
+          'classes' => '',
+          'conditions' => array(),
+          'content_field' => 'field_tab_body',
+          'content_field_striptags' => 0,
+          'quicktabs' => array(
+            'hide_empty_tabs' => 1,
+            'options' => array(
+              'accordion' => array(
+                'history' => 0,
+                'jquery_ui' => array(
+                  'autoHeight' => 1,
+                  'collapsible' => 1,
+                ),
+              ),
+              'ui_tabs' => array(
+                'history' => 0,
+              ),
+            ),
+            'renderer' => 'quicktabs',
+            'style' => 'default',
+          ),
+          'tab_field' => 'field_tab_title',
+        ),
+        'type' => 'field_collection_quicktabs',
+        'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_content_tabs',
+    'label' => 'Content Tabs',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'multiple_value_widget' => 'accordion',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 8,
     ),
   );
 
@@ -200,7 +368,7 @@ function cms_platform_node_page_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -304,7 +472,7 @@ function cms_platform_node_page_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -401,10 +569,10 @@ function cms_platform_node_page_field_default_field_instances() {
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
           'media_internet' => 0,
-          'upload' => 'upload',
+          'upload' => 0,
         ),
       ),
       'type' => 'media_generic',
@@ -439,7 +607,7 @@ function cms_platform_node_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 21,
       ),
       'featured' => array(
         'label' => 'above',
@@ -476,7 +644,7 @@ function cms_platform_node_page_field_default_field_instances() {
       'module' => 'video_embed_field',
       'settings' => array(),
       'type' => 'video_embed_field_video',
-      'weight' => 9,
+      'weight' => 18,
     ),
   );
 
@@ -497,7 +665,7 @@ function cms_platform_node_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 22,
       ),
       'featured' => array(
         'label' => 'above',
@@ -557,7 +725,7 @@ function cms_platform_node_page_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 10,
+      'weight' => 7,
     ),
   );
 
@@ -578,7 +746,7 @@ function cms_platform_node_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 20,
       ),
       'featured' => array(
         'label' => 'above',
@@ -622,12 +790,15 @@ function cms_platform_node_page_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Content Tabs');
   t('Description');
   t('Documents');
   t('Featured Image');
   t('Featured Videos');
   t('Links');
   t('Section');
+  t('Tab Body');
+  t('Tab Title');
   t('Used for content reference summaries in sidebar blocks etc.');
 
   return $field_instances;

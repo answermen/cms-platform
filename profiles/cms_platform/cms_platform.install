@@ -104,7 +104,7 @@ function cms_platform_install() {
   $features = array(
     'panopoly_magic',
     'panopoly_theme',
-    'cms_platform_context',
+	'cms_platform_context',
 	'cms_platform_fields',
 	'cms_platform_media',
 	'cms_platform_menu',
@@ -112,7 +112,6 @@ function cms_platform_install() {
 	'cms_platform_node_frequently_asked_question',
 	'cms_platform_node_page',
 	'cms_platform_node_panel',
-	'cms_platform_node_voices_of_true_sport',
 	'cms_platform_panels',
 	'cms_platform_seo',
 	'cms_platform_site',
@@ -122,6 +121,7 @@ function cms_platform_install() {
 	'cms_platform_beans',
 	'cms_platform_default_blocks',
 	'cms_platform_default_content',
+	'cms_platform_display_suite',
 	'cms_platform_language'
   );
   features_revert($features);
