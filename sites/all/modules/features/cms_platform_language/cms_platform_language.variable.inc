@@ -10,13 +10,13 @@
 function cms_platform_language_variable_realm_default_variables() {
 $realm_variables = array();
   $realm_variables['language']['en'] = array(
-  'site_frontpage' => 'node/20',
-  'site_name' => 'True Sport',
+  'site_frontpage' => 'node/2',
+  'site_name' => 'CMS Platform',
   'site_slogan' => '',
 );
   $realm_variables['language']['fr'] = array(
-  'site_frontpage' => 'node/21',
-  'site_name' => 'Sport Pur',
+  'site_frontpage' => 'node/1',
+  'site_name' => 'CMS Platform',
   'site_slogan' => '',
 );
 

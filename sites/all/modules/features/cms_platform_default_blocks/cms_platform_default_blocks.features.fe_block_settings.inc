@@ -24,28 +24,16 @@ function cms_platform_default_blocks_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'answermen_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'answermen_admin',
         'weight' => 0,
       ),
-      'cms_platform' => array(
+      'cms_default' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'cms_platform',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'truesport' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'truesport',
+        'theme' => 'cms_default',
         'weight' => 0,
       ),
     ),
@@ -65,28 +53,16 @@ function cms_platform_default_blocks_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'answermen_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'answermen_admin',
         'weight' => 0,
       ),
-      'cms_platform' => array(
+      'cms_default' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'cms_platform',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'truesport' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'truesport',
+        'theme' => 'cms_default',
         'weight' => 0,
       ),
     ),
@@ -96,7 +72,7 @@ function cms_platform_default_blocks_default_fe_block_settings() {
 
   $export['custom_search_blocks-1'] = array(
     'cache' => -1,
-    'css_class' => 'col-sml-2',
+    'css_class' => '',
     'custom' => 0,
     'delta' => 1,
     'i18n_block_language' => array(),
@@ -106,38 +82,26 @@ function cms_platform_default_blocks_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'answermen_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'answermen_admin',
         'weight' => 0,
       ),
-      'cms_platform' => array(
+      'cms_default' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'cms_platform',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'truesport' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'truesport',
+        'theme' => 'cms_default',
         'weight' => 0,
       ),
     ),
-    'title' => '<none>',
+    'title' => '',
     'visibility' => 0,
   );
 
   $export['locale-language'] = array(
     'cache' => -1,
-    'css_class' => 'nav navbar-nav',
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'language',
     'i18n_block_language' => array(),
@@ -147,28 +111,16 @@ function cms_platform_default_blocks_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'answermen_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'answermen_admin',
         'weight' => 0,
       ),
-      'cms_platform' => array(
+      'cms_default' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'cms_platform',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'truesport' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'truesport',
+        'theme' => 'cms_default',
         'weight' => 0,
       ),
     ),
@@ -188,28 +140,16 @@ function cms_platform_default_blocks_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'answermen_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'answermen_admin',
         'weight' => 0,
       ),
-      'cms_platform' => array(
+      'cms_default' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'cms_platform',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'truesport' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'truesport',
+        'theme' => 'cms_default',
         'weight' => 0,
       ),
     ),
@@ -229,28 +169,16 @@ function cms_platform_default_blocks_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'answermen_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'answermen_admin',
         'weight' => 0,
       ),
-      'cms_platform' => array(
+      'cms_default' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'cms_platform',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'truesport' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'truesport',
+        'theme' => 'cms_default',
         'weight' => 0,
       ),
     ),
@@ -270,29 +198,17 @@ function cms_platform_default_blocks_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'bartik',
-        'weight' => -1,
-      ),
-      'cms_platform' => array(
-        'region' => 'navigation',
-        'status' => 1,
-        'theme' => 'cms_platform',
-        'weight' => -1,
-      ),
-      'seven' => array(
+      'answermen_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'seven',
-        'weight' => -10,
+        'theme' => 'answermen_admin',
+        'weight' => 0,
       ),
-      'truesport' => array(
+      'cms_default' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'truesport',
-        'weight' => -1,
+        'theme' => 'cms_default',
+        'weight' => 0,
       ),
     ),
     'title' => '',
@@ -311,32 +227,20 @@ function cms_platform_default_blocks_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'bartik' => array(
+      'answermen_admin' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'bartik',
+        'theme' => 'answermen_admin',
         'weight' => 0,
       ),
-      'cms_platform' => array(
+      'cms_default' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'cms_platform',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'truesport' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'truesport',
+        'theme' => 'cms_default',
         'weight' => 0,
       ),
     ),
-    'title' => '<none>',
+    'title' => '',
     'visibility' => 0,
   );
 

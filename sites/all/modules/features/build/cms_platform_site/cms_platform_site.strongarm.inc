@@ -21,10 +21,10 @@ function cms_platform_site_strongarm() {
     2 => array(
       'source' => '',
     ),
-    3 => array(
+    4 => array(
       'source' => '',
     ),
-    4 => array(
+    3 => array(
       'source' => 'menu-editor-menu',
     ),
   );
@@ -216,7 +216,7 @@ function cms_platform_site_strongarm() {
 node/*/edit
 node/add/*
 block/add
-block/*/edit';
+block/*/edit*';
   $export['contextual_tabs_pages'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -253,6 +253,8 @@ block/*/edit';
   $strongarm->value = array(
     'truesport' => 'theme_breadcrumb',
     'answermen_admin' => 'shiny_breadcrumb',
+    'seven' => 'theme_breadcrumb',
+    'cms_default' => 'theme_breadcrumb',
   );
   $export['crumbs_original_theme_breadcrumb'] = $strongarm;
 
@@ -687,7 +689,7 @@ block/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_default_timezone';
-  $strongarm->value = 'America/Montreal';
+  $strongarm->value = 'America/New_York';
   $export['date_default_timezone'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1613,7 +1615,7 @@ block/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_admin_theme';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['node_admin_theme'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1662,7 +1664,7 @@ block/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'node/20';
+  $strongarm->value = 'node/2';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -1676,7 +1678,7 @@ block/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'True Sport';
+  $strongarm->value = 'CMS Platform';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2306,7 +2308,7 @@ block/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'truesport';
+  $strongarm->value = 'cms_default';
   $export['theme_default'] = $strongarm;
 
   $strongarm = new stdClass();

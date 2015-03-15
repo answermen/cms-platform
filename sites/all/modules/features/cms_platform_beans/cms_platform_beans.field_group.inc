@@ -23,7 +23,9 @@ function cms_platform_beans_field_group_info() {
     'label' => 'Caption',
     'weight' => '1',
     'children' => array(
-      0 => 'group_slide_aside',
+      0 => 'field_slide_headline',
+      1 => 'field_slide_link',
+      2 => 'field_slide_teaser',
     ),
     'format_type' => 'div',
     'format_settings' => array(

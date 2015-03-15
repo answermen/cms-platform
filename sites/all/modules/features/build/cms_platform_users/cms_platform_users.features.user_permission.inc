@@ -920,61 +920,6 @@ function cms_platform_users_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node voices_of_true_sport choice'.
-  $permissions['administer panelizer node voices_of_true_sport choice'] = array(
-    'name' => 'administer panelizer node voices_of_true_sport choice',
-    'roles' => array(
-      'Editor' => 'Editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node voices_of_true_sport content'.
-  $permissions['administer panelizer node voices_of_true_sport content'] = array(
-    'name' => 'administer panelizer node voices_of_true_sport content',
-    'roles' => array(
-      'Editor' => 'Editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node voices_of_true_sport context'.
-  $permissions['administer panelizer node voices_of_true_sport context'] = array(
-    'name' => 'administer panelizer node voices_of_true_sport context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node voices_of_true_sport defaults'.
-  $permissions['administer panelizer node voices_of_true_sport defaults'] = array(
-    'name' => 'administer panelizer node voices_of_true_sport defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node voices_of_true_sport layout'.
-  $permissions['administer panelizer node voices_of_true_sport layout'] = array(
-    'name' => 'administer panelizer node voices_of_true_sport layout',
-    'roles' => array(
-      'Editor' => 'Editor',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node voices_of_true_sport overview'.
-  $permissions['administer panelizer node voices_of_true_sport overview'] = array(
-    'name' => 'administer panelizer node voices_of_true_sport overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node voices_of_true_sport settings'.
-  $permissions['administer panelizer node voices_of_true_sport settings'] = array(
-    'name' => 'administer panelizer node voices_of_true_sport settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer taxonomy_term section defaults'.
   $permissions['administer panelizer taxonomy_term section defaults'] = array(
     'name' => 'administer panelizer taxonomy_term section defaults',
@@ -1385,15 +1330,6 @@ function cms_platform_users_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: 'create voices_of_true_sport content'.
-  $permissions['create voices_of_true_sport content'] = array(
-    'name' => 'create voices_of_true_sport content',
-    'roles' => array(
-      'Editor' => 'Editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'customize ckeditor'.
   $permissions['customize ckeditor'] = array(
     'name' => 'customize ckeditor',
@@ -1521,15 +1457,6 @@ function cms_platform_users_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'delete any voices_of_true_sport content'.
-  $permissions['delete any voices_of_true_sport content'] = array(
-    'name' => 'delete any voices_of_true_sport content',
-    'roles' => array(
-      'Editor' => 'Editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete backup files'.
   $permissions['delete backup files'] = array(
     'name' => 'delete backup files',
@@ -1628,15 +1555,6 @@ function cms_platform_users_user_default_permissions() {
       'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete own voices_of_true_sport content'.
-  $permissions['delete own voices_of_true_sport content'] = array(
-    'name' => 'delete own voices_of_true_sport content',
-    'roles' => array(
-      'Editor' => 'Editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete revisions'.
@@ -1875,15 +1793,6 @@ function cms_platform_users_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit any voices_of_true_sport content'.
-  $permissions['edit any voices_of_true_sport content'] = array(
-    'name' => 'edit any voices_of_true_sport content',
-    'roles' => array(
-      'Editor' => 'Editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit bean view mode'.
   $permissions['edit bean view mode'] = array(
     'name' => 'edit bean view mode',
@@ -2015,15 +1924,6 @@ function cms_platform_users_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit own voices_of_true_sport content'.
-  $permissions['edit own voices_of_true_sport content'] = array(
-    'name' => 'edit own voices_of_true_sport content',
-    'roles' => array(
-      'Editor' => 'Editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit terms in section'.
   $permissions['edit terms in section'] = array(
     'name' => 'edit terms in section',
@@ -2039,24 +1939,6 @@ function cms_platform_users_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'export nodes'.
-  $permissions['export nodes'] = array(
-    'name' => 'export nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node_export',
-  );
-
-  // Exported permission: 'export own nodes'.
-  $permissions['export own nodes'] = array(
-    'name' => 'export own nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node_export',
   );
 
   // Exported permission: 'flush caches'.
@@ -2312,15 +2194,6 @@ function cms_platform_users_user_default_permissions() {
     'module' => 'php',
   );
 
-  // Exported permission: 'use PHP to import nodes'.
-  $permissions['use PHP to import nodes'] = array(
-    'name' => 'use PHP to import nodes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node_export',
-  );
-
   // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
@@ -2548,16 +2421,6 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'view any unpublished panel content'.
   $permissions['view any unpublished panel content'] = array(
     'name' => 'view any unpublished panel content',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'view_unpublished',
-  );
-
-  // Exported permission: 'view any unpublished voices_of_true_sport content'.
-  $permissions['view any unpublished voices_of_true_sport content'] = array(
-    'name' => 'view any unpublished voices_of_true_sport content',
     'roles' => array(
       'Editor' => 'Editor',
       'administrator' => 'administrator',

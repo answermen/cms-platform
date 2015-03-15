@@ -41,6 +41,24 @@ function cms_platform_media_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'imce_custom_content';
+  $strongarm->value = array(
+    'imce_mkdir_content' => 1,
+  );
+  $export['imce_custom_content'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'imce_custom_process';
+  $strongarm->value = array(
+    'imce_mkdir_process_profile' => 1,
+  );
+  $export['imce_custom_process'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'imce_profiles';
   $strongarm->value = array(
     1 => array(
@@ -61,6 +79,8 @@ function cms_platform_media_strongarm() {
           'thumb' => 1,
           'delete' => 1,
           'resize' => 1,
+          'mkdir' => 1,
+          'rmdir' => 1,
         ),
       ),
       'thumbnails' => array(
@@ -84,6 +104,7 @@ function cms_platform_media_strongarm() {
         ),
       ),
       'uploader' => 'plupload',
+      'mkdirnum' => 0,
     ),
     2 => array(
       'name' => 'Sample profile',
@@ -103,6 +124,8 @@ function cms_platform_media_strongarm() {
           'thumb' => 1,
           'delete' => 0,
           'resize' => 0,
+          'mkdir' => 0,
+          'rmdir' => 0,
         ),
       ),
       'thumbnails' => array(
@@ -113,6 +136,7 @@ function cms_platform_media_strongarm() {
           'suffix' => '',
         ),
       ),
+      'mkdirnum' => 2,
     ),
     3 => array(
       'name' => 'Editor',
@@ -132,6 +156,8 @@ function cms_platform_media_strongarm() {
           'thumb' => 1,
           'delete' => 1,
           'resize' => 1,
+          'mkdir' => 1,
+          'rmdir' => 1,
         ),
       ),
       'thumbnails' => array(
@@ -142,6 +168,7 @@ function cms_platform_media_strongarm() {
           'suffix' => '',
         ),
       ),
+      'mkdirnum' => '2',
       'uploader' => 'plupload',
     ),
   );
@@ -152,15 +179,15 @@ function cms_platform_media_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'imce_roles_profiles';
   $strongarm->value = array(
+    3 => array(
+      'weight' => '0',
+      'public_pid' => '3',
+      'private_pid' => '3',
+    ),
     4 => array(
       'weight' => '0',
       'public_pid' => '3',
       'private_pid' => 0,
-    ),
-    3 => array(
-      'weight' => '0',
-      'public_pid' => '1',
-      'private_pid' => '1',
     ),
     2 => array(
       'weight' => 11,

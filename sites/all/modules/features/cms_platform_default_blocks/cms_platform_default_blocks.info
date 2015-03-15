@@ -26,5 +26,5 @@ features[fe_block_settings][] = search-form
 features[fe_block_settings][] = superfish-1
 features[features_api][] = api:2
 features[uuid_bean][] = 9b1f865a-7f3c-49af-a1f1-2be455be2084
-mtime = 1424283775
+mtime = 1426443112
 project path = sites/all/modules/features
