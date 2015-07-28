@@ -29,6 +29,7 @@ class panels_renderer_ipe extends panels_renderer_editor {
       '#type' => 'link',
       '#title' => t('Customize this page'),
       '#href' => $this->get_url('save_form'),
+      '#options' => array('query' => drupal_get_destination()),
       '#id' => 'panels-ipe-customize-page',
       '#attributes' => array(
         'class' => array('panels-ipe-startedit', 'panels-ipe-pseudobutton'),
@@ -49,6 +50,7 @@ class panels_renderer_ipe extends panels_renderer_editor {
         '#type' => 'link',
         '#title' => t('Change layout'),
         '#href' => $this->get_url('change_layout'),
+        '#options' => array('query' => drupal_get_destination()),
         '#attributes' => array(
           'class' => array('panels-ipe-change-layout', 'panels-ipe-pseudobutton', 'ctools-modal-layout'),
         ),
@@ -278,11 +280,6 @@ class panels_renderer_ipe extends panels_renderer_editor {
     if (!empty($form_state['clicked_button']['#save-display'])) {
       // Saved. Save the cache.
       panels_edit_cache_save($this->cache);
-      // Clear the cache and make sure the current display reflects the most
-      // recent data that was saved.
-      panels_edit_cache_clear($this->cache);
-      $this->cache = panels_edit_cache_get($this->display->cache_key);
-      $this->display = $this->cache->display;
       // A rerender should fix IDs on added panes as well as ensure style changes are
       // rendered.
       $this->meta_location = 'inline';
