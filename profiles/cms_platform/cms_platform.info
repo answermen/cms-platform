@@ -194,6 +194,8 @@ dependencies[] = token
 dependencies[] = transliteration
 dependencies[] = twitter_block
 dependencies[] = twitterfield
+dependencies[] = better_formats
+dependencies[] = fitvids
 ; Panels
 dependencies[] = panelizer
 dependencies[] = panels
