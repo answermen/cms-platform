@@ -204,6 +204,8 @@ function entity_translation_overview($entity_type, $entity, $callback = NULL) {
   }
 
   $handler = entity_translation_get_handler($entity_type, $entity);
+  // Ensure $entity holds an entity object and not an id.
+  $entity = $handler->getEntity();
   $handler->initPathScheme();
 
   // Initialize translations if they are empty.
@@ -217,8 +219,7 @@ function entity_translation_overview($entity_type, $entity, $callback = NULL) {
   // languages.
   if ($handler->initOriginalTranslation()) {
     // FIXME!
-    field_attach_presave($entity_type, $entity);
-    field_attach_update($entity_type, $entity);
+    entity_translation_entity_save($entity_type, $entity);
   }
 
   $header = array(t('Language'), t('Source language'), t('Translation'), t('Status'), t('Operations'));
@@ -284,7 +285,7 @@ function entity_translation_overview($entity_type, $entity, $callback = NULL) {
         // No such translation in the set yet: help user to create it.
         $row_title = $source_name = t('n/a');
 
-        if ($source != $langcode && $handler->getAccess('update')) {
+        if ($source != $langcode && $handler->getAccess('update') && $handler->getTranslationAccess($langcode)) {
           list(, , $bundle) = entity_extract_ids($entity_type, $entity);
           $translatable = FALSE;
 
@@ -382,12 +383,14 @@ function theme_entity_translation_overview_outdated($variables){
  */
 function entity_translation_delete_confirm($form, $form_state, $entity_type, $entity, $langcode) {
   $handler = entity_translation_get_handler($entity_type, $entity);
+  $handler->setFormLanguage($langcode);
   $languages = language_list();
 
   $form = array(
     '#handler' => $handler,
     '#entity_type' => $entity_type,
-    '#entity' => $entity,
+    // Ensure $entity holds an entity object and not an id.
+    '#entity' => $handler->getEntity(),
     '#language' => $langcode,
   );
 
@@ -416,8 +419,7 @@ function entity_translation_delete_confirm_submit($form, &$form_state) {
 
   // Remove the translation entry and the related fields.
   $handler->removeTranslation($langcode);
-  field_attach_presave($entity_type, $entity);
-  field_attach_update($entity_type, $entity);
+  entity_translation_entity_save($entity_type, $entity);
 
   $form_state['redirect'] = $handler->getTranslatePath();
 }
@@ -650,8 +652,7 @@ function _entity_translation_update_field($entity_type, $entity, $field_name) {
   // otherwise any stored empty field value would be deleted. If this happens
   // the range queries would be messed up.
   if ($empty < count($entity->{$field_name})) {
-    field_attach_presave($entity_type, $entity);
-    field_attach_update($entity_type, $entity);
+    entity_translation_entity_save($entity_type, $entity);
   }
 }
 
