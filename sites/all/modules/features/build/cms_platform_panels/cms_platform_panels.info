@@ -42,4 +42,5 @@ features[variable][] = panelizer_node:page_allowed_types
 features[variable][] = panelizer_node:page_allowed_types_default
 features[variable][] = panelizer_node:page_default
 features[variable][] = panelizer_node:voices_of_true_sport:page_manager_selection
-mtime = 1424534532
+mtime = 1426443714
+project path = sites/all/modules/features/build

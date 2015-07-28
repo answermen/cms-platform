@@ -44,24 +44,29 @@ function cms_platform_panels_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_article';
   $strongarm->value = array(
     'status' => 1,
+    'help' => '',
     'view modes' => array(
       'page_manager' => array(
         'status' => 1,
+        'substitute' => '',
         'default' => 1,
         'choice' => 1,
       ),
       'default' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'teaser' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'featured' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
@@ -111,6 +116,7 @@ function cms_platform_panels_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_frequently_asked_question';
   $strongarm->value = array(
     'status' => 0,
+    'help' => '',
     'view modes' => array(),
   );
   $export['panelizer_defaults_node_frequently_asked_question'] = $strongarm;
@@ -121,34 +127,41 @@ function cms_platform_panels_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_page';
   $strongarm->value = array(
     'status' => 1,
+    'help' => '',
     'view modes' => array(
       'page_manager' => array(
         'status' => 1,
+        'substitute' => '',
         'default' => 1,
         'choice' => 1,
       ),
       'default' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'full' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'teaser' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'featured' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'content_reference' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
@@ -162,28 +175,8 @@ function cms_platform_panels_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_panel';
   $strongarm->value = array(
     'status' => 0,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
+    'help' => '',
+    'view modes' => array(),
   );
   $export['panelizer_defaults_node_panel'] = $strongarm;
 

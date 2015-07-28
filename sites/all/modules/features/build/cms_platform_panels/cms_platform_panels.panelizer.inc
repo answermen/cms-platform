@@ -257,29 +257,6 @@ function cms_platform_panels_panelizer_defaults() {
     $pane->uuid = 'ed7bbb6e-fdcb-420e-b0ba-2d92c3a5447b';
     $display->content['new-ed7bbb6e-fdcb-420e-b0ba-2d92c3a5447b'] = $pane;
     $display->panels['sidebar'][0] = 'new-ed7bbb6e-fdcb-420e-b0ba-2d92c3a5447b';
-    $pane = new stdClass();
-    $pane->pid = 'new-922e6a62-7dc1-4443-a9e8-ec1d60dcebe5';
-    $pane->panel = 'sidebar';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'talking_true_sport-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_settings' => 'fields',
-      'header_type' => 'none',
-      'view_mode' => 'teaser',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '922e6a62-7dc1-4443-a9e8-ec1d60dcebe5';
-    $display->content['new-922e6a62-7dc1-4443-a9e8-ec1d60dcebe5'] = $pane;
-    $display->panels['sidebar'][1] = 'new-922e6a62-7dc1-4443-a9e8-ec1d60dcebe5';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-568ebe6d-cb4a-4921-b661-ffe781adb0fb';
   $panelizer->display = $display;
@@ -543,29 +520,6 @@ function cms_platform_panels_panelizer_defaults() {
     $pane->uuid = '7904ed3f-a219-4883-9b0c-8a89a00b518c';
     $display->content['new-7904ed3f-a219-4883-9b0c-8a89a00b518c'] = $pane;
     $display->panels['sidebar'][0] = 'new-7904ed3f-a219-4883-9b0c-8a89a00b518c';
-    $pane = new stdClass();
-    $pane->pid = 'new-5f1d398f-7297-48a4-b97e-36b11c4342bf';
-    $pane->panel = 'sidebar';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'talking_true_sport-panel_pane_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_settings' => 'fields',
-      'header_type' => 'none',
-      'view_mode' => 'teaser',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '5f1d398f-7297-48a4-b97e-36b11c4342bf';
-    $display->content['new-5f1d398f-7297-48a4-b97e-36b11c4342bf'] = $pane;
-    $display->panels['sidebar'][1] = 'new-5f1d398f-7297-48a4-b97e-36b11c4342bf';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
