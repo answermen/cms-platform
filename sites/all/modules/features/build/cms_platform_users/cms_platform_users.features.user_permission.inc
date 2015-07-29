@@ -13,21 +13,27 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'access absolute messages'.
   $permissions['access absolute messages'] = array(
     'name' => 'access absolute messages',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'absolute_messages',
   );
 
   // Exported permission: 'access administration menu'.
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'admin_menu',
   );
 
   // Exported permission: 'access administration pages'.
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'system',
   );
 
@@ -55,49 +61,64 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'access bean overview'.
   $permissions['access bean overview'] = array(
     'name' => 'access bean overview',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'access ckeditor link'.
   $permissions['access ckeditor link'] = array(
     'name' => 'access ckeditor link',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'ckeditor_link',
   );
 
   // Exported permission: 'access coffee'.
   $permissions['access coffee'] = array(
     'name' => 'access coffee',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'coffee',
   );
 
   // Exported permission: 'access comments'.
   $permissions['access comments'] = array(
     'name' => 'access comments',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'comment',
   );
 
   // Exported permission: 'access content'.
   $permissions['access content'] = array(
     'name' => 'access content',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'access content overview'.
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'access contextual links'.
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'contextual',
   );
 
@@ -125,21 +146,27 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'access mb content'.
   $permissions['access mb content'] = array(
     'name' => 'access mb content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'mb_content',
   );
 
   // Exported permission: 'access media browser'.
   $permissions['access media browser'] = array(
     'name' => 'access media browser',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'media',
   );
 
   // Exported permission: 'access private fields'.
   $permissions['access private fields'] = array(
     'name' => 'access private fields',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -251,14 +278,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer bean types'.
   $permissions['administer bean types'] = array(
     'name' => 'administer bean types',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'administer beans'.
   $permissions['administer beans'] = array(
     'name' => 'administer beans',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
@@ -272,7 +303,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer blocks'.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'block',
   );
 
@@ -300,7 +333,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer clean markup panel pane settings'.
   $permissions['administer clean markup panel pane settings'] = array(
     'name' => 'administer clean markup panel pane settings',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'clean_markup_panels',
   );
 
@@ -321,14 +356,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer comments'.
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'comment',
   );
 
   // Exported permission: 'administer content translations'.
   $permissions['administer content translations'] = array(
     'name' => 'administer content translations',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'i18n_node',
   );
 
@@ -398,7 +437,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer entityform types'.
   $permissions['administer entityform types'] = array(
     'name' => 'administer entityform types',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'entityform',
   );
 
@@ -433,7 +474,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer field permissions'.
   $permissions['administer field permissions'] = array(
     'name' => 'administer field permissions',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'field_permissions',
   );
 
@@ -454,7 +497,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer files'.
   $permissions['administer files'] = array(
     'name' => 'administer files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
@@ -524,7 +569,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'menu',
   );
 
@@ -566,7 +613,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -601,14 +650,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer panelizer node article choice'.
   $permissions['administer panelizer node article choice'] = array(
     'name' => 'administer panelizer node article choice',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node article content'.
   $permissions['administer panelizer node article content'] = array(
     'name' => 'administer panelizer node article content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panelizer',
   );
 
@@ -629,7 +682,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer panelizer node article layout'.
   $permissions['administer panelizer node article layout'] = array(
     'name' => 'administer panelizer node article layout',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panelizer',
   );
 
@@ -664,14 +719,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer panelizer node page content'.
   $permissions['administer panelizer node page content'] = array(
     'name' => 'administer panelizer node page content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panelizer',
   );
 
   // Exported permission: 'administer panelizer node page context'.
   $permissions['administer panelizer node page context'] = array(
     'name' => 'administer panelizer node page context',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panelizer',
   );
 
@@ -685,7 +744,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer panelizer node page layout'.
   $permissions['administer panelizer node page layout'] = array(
     'name' => 'administer panelizer node page layout',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panelizer',
   );
 
@@ -734,14 +795,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer panels layouts'.
   $permissions['administer panels layouts'] = array(
     'name' => 'administer panels layouts',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panels',
   );
 
   // Exported permission: 'administer panels styles'.
   $permissions['administer panels styles'] = array(
     'name' => 'administer panels styles',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panels',
   );
 
@@ -825,7 +890,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'administer system menus'.
   $permissions['administer system menus'] = array(
     'name' => 'administer system menus',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'content_menu',
   );
 
@@ -888,14 +955,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'bypass file access'.
   $permissions['bypass file access'] = array(
     'name' => 'bypass file access',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -923,14 +994,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'change layouts in place editing'.
   $permissions['change layouts in place editing'] = array(
     'name' => 'change layouts in place editing',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panels',
   );
 
   // Exported permission: 'change own username'.
   $permissions['change own username'] = array(
     'name' => 'change own username',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'user',
   );
 
@@ -944,42 +1019,54 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'create any beanslide bean'.
   $permissions['create any beanslide bean'] = array(
     'name' => 'create any beanslide bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'create any content_reference bean'.
   $permissions['create any content_reference bean'] = array(
     'name' => 'create any content_reference bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'create any custom_content_block bean'.
   $permissions['create any custom_content_block bean'] = array(
     'name' => 'create any custom_content_block bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'create article content'.
   $permissions['create article content'] = array(
     'name' => 'create article content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'create frequently_asked_question content'.
   $permissions['create frequently_asked_question content'] = array(
     'name' => 'create frequently_asked_question content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -993,7 +1080,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -1014,7 +1103,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'path',
   );
 
@@ -1028,70 +1119,90 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'delete any article content'.
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any audio files'.
   $permissions['delete any audio files'] = array(
     'name' => 'delete any audio files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'delete any beanslide bean'.
   $permissions['delete any beanslide bean'] = array(
     'name' => 'delete any beanslide bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'delete any content_reference bean'.
   $permissions['delete any content_reference bean'] = array(
     'name' => 'delete any content_reference bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'delete any custom_content_block bean'.
   $permissions['delete any custom_content_block bean'] = array(
     'name' => 'delete any custom_content_block bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'delete any document files'.
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'delete any entityform'.
   $permissions['delete any entityform'] = array(
     'name' => 'delete any entityform',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'entityform',
   );
 
   // Exported permission: 'delete any frequently_asked_question content'.
   $permissions['delete any frequently_asked_question content'] = array(
     'name' => 'delete any frequently_asked_question content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any image files'.
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -1112,7 +1223,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'delete any video files'.
   $permissions['delete any video files'] = array(
     'name' => 'delete any video files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
@@ -1126,49 +1239,63 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'delete own article content'.
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own audio files'.
   $permissions['delete own audio files'] = array(
     'name' => 'delete own audio files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'delete own document files'.
   $permissions['delete own document files'] = array(
     'name' => 'delete own document files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'delete own entityform'.
   $permissions['delete own entityform'] = array(
     'name' => 'delete own entityform',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'entityform',
   );
 
   // Exported permission: 'delete own frequently_asked_question content'.
   $permissions['delete own frequently_asked_question content'] = array(
     'name' => 'delete own frequently_asked_question content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own image files'.
   $permissions['delete own image files'] = array(
     'name' => 'delete own image files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'delete own page content'.
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -1189,14 +1316,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'delete own video files'.
   $permissions['delete own video files'] = array(
     'name' => 'delete own video files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -1210,14 +1341,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'delete terms in tags'.
   $permissions['delete terms in tags'] = array(
     'name' => 'delete terms in tags',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'display admin pages in another language'.
   $permissions['display admin pages in another language'] = array(
     'name' => 'display admin pages in another language',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'admin_language',
   );
 
@@ -1231,126 +1366,162 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'download any audio files'.
   $permissions['download any audio files'] = array(
     'name' => 'download any audio files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download any document files'.
   $permissions['download any document files'] = array(
     'name' => 'download any document files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download any image files'.
   $permissions['download any image files'] = array(
     'name' => 'download any image files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download any video files'.
   $permissions['download any video files'] = array(
     'name' => 'download any video files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download own audio files'.
   $permissions['download own audio files'] = array(
     'name' => 'download own audio files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download own document files'.
   $permissions['download own document files'] = array(
     'name' => 'download own document files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download own image files'.
   $permissions['download own image files'] = array(
     'name' => 'download own image files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'download own video files'.
   $permissions['download own video files'] = array(
     'name' => 'download own video files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'edit any article content'.
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any audio files'.
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'edit any beanslide bean'.
   $permissions['edit any beanslide bean'] = array(
     'name' => 'edit any beanslide bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'edit any content_reference bean'.
   $permissions['edit any content_reference bean'] = array(
     'name' => 'edit any content_reference bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'edit any custom_content_block bean'.
   $permissions['edit any custom_content_block bean'] = array(
     'name' => 'edit any custom_content_block bean',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'edit any document files'.
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'edit any entityform'.
   $permissions['edit any entityform'] = array(
     'name' => 'edit any entityform',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'entityform',
   );
 
   // Exported permission: 'edit any frequently_asked_question content'.
   $permissions['edit any frequently_asked_question content'] = array(
     'name' => 'edit any frequently_asked_question content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any image files'.
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -1371,70 +1542,90 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'edit any video files'.
   $permissions['edit any video files'] = array(
     'name' => 'edit any video files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'edit bean view mode'.
   $permissions['edit bean view mode'] = array(
     'name' => 'edit bean view mode',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'edit own article content'.
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own audio files'.
   $permissions['edit own audio files'] = array(
     'name' => 'edit own audio files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'edit own comments'.
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'comment',
   );
 
   // Exported permission: 'edit own document files'.
   $permissions['edit own document files'] = array(
     'name' => 'edit own document files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'edit own entityform'.
   $permissions['edit own entityform'] = array(
     'name' => 'edit own entityform',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'entityform',
   );
 
   // Exported permission: 'edit own frequently_asked_question content'.
   $permissions['edit own frequently_asked_question content'] = array(
     'name' => 'edit own frequently_asked_question content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own image files'.
   $permissions['edit own image files'] = array(
     'name' => 'edit own image files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'edit own page content'.
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -1455,7 +1646,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'edit own video files'.
   $permissions['edit own video files'] = array(
     'name' => 'edit own video files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
@@ -1469,7 +1662,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'edit terms in tags'.
   $permissions['edit terms in tags'] = array(
     'name' => 'edit terms in tags',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -1539,7 +1734,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'post comments'.
   $permissions['post comments'] = array(
     'name' => 'post comments',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'comment',
   );
 
@@ -1560,14 +1757,19 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'editor' => 'editor',
+    ),
     'module' => 'search',
   );
 
@@ -1581,7 +1783,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'skip comment approval'.
   $permissions['skip comment approval'] = array(
     'name' => 'skip comment approval',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'comment',
   );
 
@@ -1616,28 +1820,36 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'translate bean entities'.
   $permissions['translate bean entities'] = array(
     'name' => 'translate bean entities',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'entity_translation',
   );
 
   // Exported permission: 'translate content'.
   $permissions['translate content'] = array(
     'name' => 'translate content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'translation',
   );
 
   // Exported permission: 'translate interface'.
   $permissions['translate interface'] = array(
     'name' => 'translate interface',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'locale',
   );
 
   // Exported permission: 'translate user-defined strings'.
   $permissions['translate user-defined strings'] = array(
     'name' => 'translate user-defined strings',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'i18n_string',
   );
 
@@ -1658,35 +1870,47 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'search',
   );
 
   // Exported permission: 'use all enabled languages'.
   $permissions['use all enabled languages'] = array(
     'name' => 'use all enabled languages',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'admin_language',
   );
 
   // Exported permission: 'use custom search'.
   $permissions['use custom search'] = array(
     'name' => 'use custom search',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'editor' => 'editor',
+    ),
     'module' => 'custom_search',
   );
 
   // Exported permission: 'use custom search blocks'.
   $permissions['use custom search blocks'] = array(
     'name' => 'use custom search blocks',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'editor' => 'editor',
+    ),
     'module' => 'custom_search_blocks',
   );
 
   // Exported permission: 'use ipe with page manager'.
   $permissions['use ipe with page manager'] = array(
     'name' => 'use ipe with page manager',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panels',
   );
 
@@ -1721,7 +1945,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'use panels in place editing'.
   $permissions['use panels in place editing'] = array(
     'name' => 'use panels in place editing',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'panels',
   );
 
@@ -1742,14 +1968,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'use text format filtered_html'.
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'filter',
   );
 
   // Exported permission: 'use text format full_html'.
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'filter',
   );
 
@@ -1763,28 +1993,39 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'view any beanslide bean'.
   $permissions['view any beanslide bean'] = array(
     'name' => 'view any beanslide bean',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'view any content_reference bean'.
   $permissions['view any content_reference bean'] = array(
     'name' => 'view any content_reference bean',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'view any custom_content_block bean'.
   $permissions['view any custom_content_block bean'] = array(
     'name' => 'view any custom_content_block bean',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'view any entityform'.
   $permissions['view any entityform'] = array(
     'name' => 'view any entityform',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'entityform',
   );
 
@@ -1798,7 +2039,9 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'view any unpublished content'.
   $permissions['view any unpublished content'] = array(
     'name' => 'view any unpublished content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'view_unpublished',
   );
 
@@ -1826,14 +2069,18 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'view bean page'.
   $permissions['view bean page'] = array(
     'name' => 'view bean page',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
   // Exported permission: 'view bean revisions'.
   $permissions['view bean revisions'] = array(
     'name' => 'view bean revisions',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'bean',
   );
 
@@ -1843,6 +2090,7 @@ function cms_platform_users_user_default_permissions() {
     'roles' => array(
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'file_entity',
   );
@@ -1850,28 +2098,36 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'view own entityform'.
   $permissions['view own entityform'] = array(
     'name' => 'view own entityform',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'entityform',
   );
 
   // Exported permission: 'view own files'.
   $permissions['view own files'] = array(
     'name' => 'view own files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'view own private files'.
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -1885,21 +2141,27 @@ function cms_platform_users_user_default_permissions() {
   // Exported permission: 'view private files'.
   $permissions['view private files'] = array(
     'name' => 'view private files',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'file_entity',
   );
 
   // Exported permission: 'view revisions'.
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'view the administration theme'.
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'system',
   );
 
